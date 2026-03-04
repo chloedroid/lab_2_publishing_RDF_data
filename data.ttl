@@ -1,4 +1,4 @@
-@prefix ex: <https://github.com/chloedroid/lab_2_publishing_RDF_data/blob/main/vocab.ttl> .
+@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -32,3 +32,4 @@
 	ex:knows <https://research.flw.ugent.be/nl/paulien.lemay> ;
 
 	ex:knows <https://research.ugent.be/web/person/jelle-nelis-0/nl> . 
+
