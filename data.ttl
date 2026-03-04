@@ -1,0 +1,33 @@
+@prefix ex: <https://example.org/vocab#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Data
+
+<https://www.wikidata.org/entity/Q3359412> a ex:Organisation ;
+	rdfs:label "Amsab-Institute of Social History"@en, "Amsab-Instituut voor Sociale Geschiedenis"@nl .
+
+<http://vocab.getty.edu/page/1026794> a ex:Municipality ;
+	rdfs:label "Waregem" .
+	
+ <https://www.wikidata.org/wiki/Q37713312> a ex:MaritalStatus ;
+	rdfs:label "Married"@en, "Getrouwd"@nl . 
+	
+<https://www.wikidata.org/entity/Q28228836> a ex:MusicArtist ;
+	rdfs:label "Big Thief" . 
+	
+<https://research.flw.ugent.be/nl/paulien.lemay> a ex:Person ;
+	rdfs:label "Paulien Lemay" .
+
+<https://research.ugent.be/web/person/jelle-nelis-0/nl> a ex:Person ;
+	rdfs:label "Jelle Nelis" .
+
+<https://pro.europeana.eu/person/chloe-van-gelder> a ex:Person ;
+	ex:name "Chloë Van Gelder"^^xsd:string ;
+	ex:age 31 ;
+	ex:worksAt <https://www.wikidata.org/entity/Q3359412> ;
+	ex:livesIn <http://vocab.getty.edu/page/1026794> ;
+	ex:maritalStatus <https://www.wikidata.org/wiki/Q37713312> ;
+	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
+	ex:knows <https://research.flw.ugent.be/nl/paulien.lemay> ;
+	ex:knows <https://research.ugent.be/web/person/jelle-nelis-0/nl> . 
