@@ -1,4 +1,4 @@
-@prefix ex: <https://example.org/vocab#> .
+@prefix ex: <https://github.com/chloedroid/lab_2_publishing_RDF_data/blob/main/vocab.ttl> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -30,4 +30,5 @@
 	ex:maritalStatus <https://www.wikidata.org/wiki/Q37713312> ;
 	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
 	ex:knows <https://research.flw.ugent.be/nl/paulien.lemay> ;
+
 	ex:knows <https://research.ugent.be/web/person/jelle-nelis-0/nl> . 
