@@ -1,4 +1,4 @@
-@prefix ex: <https://example.org/vocab#> .
+@prefix ex: <https://github.com/chloedroid/lab_2_publishing_RDF_data/blob/main/vocab.ttl> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -65,4 +65,5 @@ ex:knows a rdf:Property ;
     rdfs:comment "Indicates a relationship of any nature between two persons." ;
     rdfs:domain ex:Person ;
     rdfs:range ex:Person .
+
 	
