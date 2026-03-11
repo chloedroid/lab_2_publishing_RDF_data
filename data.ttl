@@ -16,11 +16,11 @@
 <http://www.wikidata.org/entity/Q28228836> a ex:MusicArtist ;
 	rdfs:label "Big Thief" . 
 	
-<http://research.flw.ugent.be/nl/paulien.lemay> a ex:Person ;
-	rdfs:label "Paulien Lemay" .
+<https://www.tabulas.eu/ward/profile.ttl> a ex:Person ;
+	rdfs:label "Ward" .
 
-<https://research.ugent.be/web/person/jelle-nelis-0/nl> a ex:Person ;
-	rdfs:label "Jelle Nelis" .
+<https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
+	rdfs:label "Thijs" .
 
 <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
 	ex:name "Chloë Van Gelder"^^xsd:string ;
@@ -29,9 +29,10 @@
 	ex:livesIn <http://vocab.getty.edu/page/1026794> ;
 	ex:maritalStatus <https://www.wikidata.org/wiki/Q37713312> ;
 	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
-	ex:knows <https://research.flw.ugent.be/nl/paulien.lemay> ;
+	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
+	ex:knows <https://www.tabulas.eu/ward/profile.ttl> ;
+	ex:isFollowing "Knowledge graphs"^^xsd:string . 
 
-	ex:knows <https://research.ugent.be/web/person/jelle-nelis-0/nl> . 
 
 
 
