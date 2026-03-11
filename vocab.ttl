@@ -48,7 +48,7 @@ ex:worksAt a rdf:Property ;
 ex:livesIn a rdf:Property ;
 	rdfs:label "lives in"@en, "woont in"@nl ;
 	rdfs:comment "Indicates the municipality where an indiviual resides."@en ;
-	rdfs:domain ex:Person .
+	rdfs:domain ex:Person ;
 	rdfs:range ex:Municipality .
 	
 ex:maritalStatus a rdf:Property ;
@@ -70,6 +70,7 @@ ex:knows a rdf:Property ;
     rdfs:range ex:Person .
 
 	
+
 
 
 
