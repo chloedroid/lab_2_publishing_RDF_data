@@ -1,4 +1,4 @@
-@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab#> .
+@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,7 +8,7 @@ ex:Person a rdfs:Class ;
 	rdfs:label "Person"@en, "Persoon"@nl ;
 	rdfs:comment "An individual human being; a man, woman, or child."@en .
 
-ex:Municipality a rfds:Class ;
+ex:Municipality a rdfs:Class ;
 	rdfs:label "Municipality"@en, "Gemeente"@nl ;
 	rdfs:comment "A municipality is a single administrative division having corporate status and powers of self-government or jurisdiction as granted by national and regional laws to which it is subordinate."@en .
 	
@@ -26,7 +26,7 @@ ex:MusicArtist a rdfs:Class ;
 	
 # Properties
 	
-ex:personalName a rdf:Property ;
+ex:personalName a rdfs:Property ;
 	rdfs:label "personal name"@en, "persoonsnaam"@nl ;
 	rdfs:comment "A personal name is the set of names by which an individual person is known."@en ;
 	rdfs:domain ex:Person ;
@@ -46,13 +46,13 @@ ex:worksAt a rdf:Property ;
 ex:livesIn a rdf:Property ;
 	rdfs:label "lives in"@en, "woont in"@nl ;
 	rdfs:comment "Indicates the municipality where an indiviual resides."@en ;
-	rdfs: domain ex:Person .
+	rdfs:domain ex:Person .
 	
 ex:maritalStatus a rdf:Property ;
     rdfs:label "marital status"@en, "burgerlijke staat"@nl ;
     rdfs:comment "Specifies the marital status of a person."@en ;
     rdfs:domain ex:Person ;
-    rdfs:range ex:MaritalStatus 	
+    rdfs:range ex:MaritalStatus .
 	
 ex:isListeningTo a rdf:Property ;
     rdfs:label "is listening to"@en, "luistert naar"@nl ;
@@ -61,12 +61,13 @@ ex:isListeningTo a rdf:Property ;
     rdfs:range ex:MusicArtist .
 	
 ex:knows a rdf:Property ;
-    rdfs:label "knows"en, "kent"@nl ;
+    rdfs:label "knows"@en, "kent"@nl ;
     rdfs:comment "Indicates a relationship of any nature between two persons." ;
     rdfs:domain ex:Person ;
     rdfs:range ex:Person .
 
 	
+
 
 
 
