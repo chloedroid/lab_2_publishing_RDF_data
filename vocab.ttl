@@ -26,8 +26,8 @@ ex:MusicArtist a rdfs:Class ;
 	rdfs:comment "A music artist is someone or a group of people who composes, conducts or performs music."@en .
 
 ex:Course a rdfs:Class ;
-	rfds:label "Course"@en, "Vak"@nl ;
-	rfds:comment "A course in school is a structured, distinct unit of study focused on a specific subject."@en .
+	rdfs:label "Course"@en, "Vak"@nl ;
+	rdfs:comment "A course in school is a structured, distinct unit of study focused on a specific subject."@en .
 	
 # Properties
 	
@@ -85,6 +85,7 @@ ex:seeAlso a rdf:Property ;
 	rdfs:domain rdfs:Resource ;
 	rdfs:range rdfs:Resoure . 
 	
+
 
 
 
