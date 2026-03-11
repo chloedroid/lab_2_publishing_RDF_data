@@ -32,7 +32,7 @@ ex:personalName a rdfs:Property ;
 	rdfs:domain ex:Person ;
 	rdfs:range xsd:string .
 	
-ex:age a rdf:Property ;
+ex:age a rdfs:Property ;
 	rdfs:label "age"@en, "leeftijd"@nl ;
 	rdfs:comment "An age indicates how many years old a person is."@en ;
 	rdfs:domain ex:Person ;
@@ -69,6 +69,7 @@ ex:knows a rdf:Property ;
     rdfs:range ex:Person .
 
 	
+
 
 
 
