@@ -77,7 +77,7 @@ ex:isFollowing a rdf:Property ;
 	rdfs:label "is following"@en, "volgt"@nl ;
 	rdfs:comment "Is taking part in."@en ;
 	rdfs:domain ex:Person ;
-	rdfs: range ex:Course . 
+	rdfs:range ex:Course . 
 
 ex:seeAlso a rdf:Property ;
 	rdfs:label "see also"@en, "zie ook"@nl ;
@@ -85,17 +85,4 @@ ex:seeAlso a rdf:Property ;
 	rdfs:domain rdfs:Resource ;
 	rdfs:range rdfs:Resoure . 
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
 
