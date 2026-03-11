@@ -76,7 +76,7 @@ ex:knows a rdf:Property ;
 ex:isFollowing a rdf:Property ;
 	rdfs:label "is following"@en, "volgt"@nl ;
 	rdfs:comment "Is taking part in."@en ;
-	rfds:domain ex:Person ;
+	rdfs:domain ex:Person ;
 	rdfs: range ex:Course . 
 
 ex:seeAlso a rdf:Property ;
@@ -85,6 +85,7 @@ ex:seeAlso a rdf:Property ;
 	rdfs:domain rdfs:Resource ;
 	rdfs:range rdfs:Resoure . 
 	
+
 
 
 
