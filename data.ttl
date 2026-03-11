@@ -4,25 +4,25 @@
 
 # Data
 
-<https://www.wikidata.org/entity/Q3359412> a ex:Organisation ;
+<http://www.wikidata.org/entity/Q3359412> a ex:Organisation ;
 	rdfs:label "Amsab-Institute of Social History"@en, "Amsab-Instituut voor Sociale Geschiedenis"@nl .
 
-<https://vocab.getty.edu/tgn/1026794> a ex:Municipality ;
+<http://vocab.getty.edu/tgn/1026794> a ex:Municipality ;
 	rdfs:label "Waregem" .
 	
- <https://www.wikidata.org/wiki/Q37713312> a ex:MaritalStatus ;
+ <http://www.wikidata.org/wiki/Q37713312> a ex:MaritalStatus ;
 	rdfs:label "Married"@en, "Getrouwd"@nl . 
 	
-<https://www.wikidata.org/entity/Q28228836> a ex:MusicArtist ;
+<http://www.wikidata.org/entity/Q28228836> a ex:MusicArtist ;
 	rdfs:label "Big Thief" . 
 	
-<https://research.flw.ugent.be/nl/paulien.lemay> a ex:Person ;
+<http://research.flw.ugent.be/nl/paulien.lemay> a ex:Person ;
 	rdfs:label "Paulien Lemay" .
 
 <https://research.ugent.be/web/person/jelle-nelis-0/nl> a ex:Person ;
 	rdfs:label "Jelle Nelis" .
 
-<https://pro.europeana.eu/person/chloe-van-gelder> a ex:Person ;
+<https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
 	ex:name "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
 	ex:worksAt <https://www.wikidata.org/entity/Q3359412> ;
@@ -32,5 +32,6 @@
 	ex:knows <https://research.flw.ugent.be/nl/paulien.lemay> ;
 
 	ex:knows <https://research.ugent.be/web/person/jelle-nelis-0/nl> . 
+
 
 
