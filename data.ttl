@@ -33,8 +33,10 @@ ex:KnowledgeGraphs a ex:Course ;
 	ex:livesIn <http://vocab.getty.edu/page/1026794> ;
 	ex:maritalStatus <https://www.wikidata.org/wiki/Q37713312> ;
 	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
-	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> , <https://www.tabulas.eu/ward/profile.ttl> ;
+	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
+	ex:knows <https://www.tabulas.eu/ward/profile.ttl> ;
 	ex:isFollowing ex:KnowledgeGraphs . 
+
 
 
 
