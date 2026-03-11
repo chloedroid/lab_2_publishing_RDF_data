@@ -38,7 +38,7 @@ ex:age a rdfs:Property ;
 	rdfs:domain ex:Person ;
 	rdfs:range xsd:integer . 
 	
-ex:worksAt a rdf:Property ;
+ex:worksAt a rdfs:Property ;
 	rdfs:label "works at"@en, "werkt bij"@nl ;
 	rdfs:comment "Indicates the organisation where an individual is employed."@en ;
 	rdfs:domain ex:Person ;
@@ -69,6 +69,7 @@ ex:knows a rdf:Property ;
     rdfs:range ex:Person .
 
 	
+
 
 
 
