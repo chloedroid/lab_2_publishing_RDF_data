@@ -7,7 +7,7 @@
 <https://www.wikidata.org/entity/Q3359412> a ex:Organisation ;
 	rdfs:label "Amsab-Institute of Social History"@en, "Amsab-Instituut voor Sociale Geschiedenis"@nl .
 
-<http://vocab.getty.edu/page/1026794> a ex:Municipality ;
+<https://vocab.getty.edu/tgn/1026794> a ex:Municipality ;
 	rdfs:label "Waregem" .
 	
  <https://www.wikidata.org/wiki/Q37713312> a ex:MaritalStatus ;
@@ -32,4 +32,5 @@
 	ex:knows <https://research.flw.ugent.be/nl/paulien.lemay> ;
 
 	ex:knows <https://research.ugent.be/web/person/jelle-nelis-0/nl> . 
+
 
