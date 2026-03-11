@@ -24,6 +24,10 @@ ex:MaritalStatus a rdfs:Class;
 ex:MusicArtist a rdfs:Class ; 
 	rdfs:label "Music artist"@en, "Muzikant"@nl ;
 	rdfs:comment "A music artist is someone or a group of people who composes, conducts or performs music."@en .
+
+ex:Course a rdfs:Class ;
+	rfds:label "Course"@en, "Vak"@nl ;
+	rfds:comment "A course in school is a structured, distinct unit of study focused on a specific subject."@en .
 	
 # Properties
 	
@@ -69,7 +73,13 @@ ex:knows a rdf:Property ;
     rdfs:domain ex:Person ;
     rdfs:range ex:Person .
 
+ex:isFollowing a rdf:Property ;
+	rdfs:label "is following"@en, "volgt"@nl ;
+	rdfs:comment "Is taking part in."@en ;
+	rfds:domain ex:Person ;
+	rdfs: range ex:Course . 
 	
+
 
 
 
