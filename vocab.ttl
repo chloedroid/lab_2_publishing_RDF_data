@@ -41,12 +41,14 @@ ex:age a rdf:Property ;
 ex:worksAt a rdf:Property ;
 	rdfs:label "works at"@en, "werkt bij"@nl ;
 	rdfs:comment "Indicates the organisation where an individual is employed."@en ;
-	rdfs:domain ex:Person .
+	rdfs:domain ex:Person ;
+	rdfs:range ex:Organisation .
 	
 ex:livesIn a rdf:Property ;
 	rdfs:label "lives in"@en, "woont in"@nl ;
 	rdfs:comment "Indicates the municipality where an indiviual resides."@en ;
 	rdfs:domain ex:Person .
+	rdfs:range ex:Municipality .
 	
 ex:maritalStatus a rdf:Property ;
     rdfs:label "marital status"@en, "burgerlijke staat"@nl ;
@@ -67,6 +69,7 @@ ex:knows a rdf:Property ;
     rdfs:range ex:Person .
 
 	
+
 
 
 
