@@ -22,6 +22,10 @@
 <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
 	rdfs:label "Thijs" .
 
+:KnowledgeGraphs a ex:Course ;
+	rdfs:label "Knowledge Graphs" ;
+	ex:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
+
 <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
 	ex:name "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
@@ -31,7 +35,8 @@
 	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
 	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
 	ex:knows <https://www.tabulas.eu/ward/profile.ttl> ;
-	ex:isFollowing "Knowledge graphs"^^xsd:string . 
+	ex:isFollowing :KnowledgeGraphs . 
+
 
 
 
