@@ -1,26 +1,27 @@
 @prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # Classes
 
-ex:Person a rdfs:Class ;
+ex:Person a rdf:Class ;
 	rdfs:label "Person"@en, "Persoon"@nl ;
 	rdfs:comment "An individual human being; a man, woman, or child."@en .
 
-ex:Municipality a rdfs:Class ;
+ex:Municipality a rdf:Class ;
 	rdfs:label "Municipality"@en, "Gemeente"@nl ;
 	rdfs:comment "A municipality is a single administrative division having corporate status and powers of self-government or jurisdiction as granted by national and regional laws to which it is subordinate."@en .
 	
-ex:Organisation a rdfs:Class ;
+ex:Organisation a rdf:Class ;
 	rdfs:label "Organisation"@en, "Organisatie"@nl ;
 	rdfs:comment "An organisation is an entity comprising one or more people and having a particular purpose."@en .
 	
-ex:MaritalStatus a rdfs:Class;
+ex:MaritalStatus a rdf:Class;
 	rdfs:label "Marital Status"@en, "Burgerlijke staat"@nl ;
 	rdfs:comment "Marital status is a civil status that indicates whether a person is married or not."@en .
 	
-ex:MusicArtist a rdfs:Class ; 
+ex:MusicArtist a rdf:Class ; 
 	rdfs:label "Music artist"@en, "Muzikant"@nl ;
 	rdfs:comment "A music artist is someone or a group of people who composes, conducts or performs music."@en .
 	
@@ -44,31 +45,32 @@ ex:worksAt a rdfs:Property ;
 	rdfs:domain ex:Person ;
 	rdfs:range ex:Organisation .
 	
-ex:livesIn a rdf:Property ;
+ex:livesIn a rdfs:Property ;
 	rdfs:label "lives in"@en, "woont in"@nl ;
 	rdfs:comment "Indicates the municipality where an indiviual resides."@en ;
 	rdfs:domain ex:Person .
 	rdfs:range ex:Municipality .
 	
-ex:maritalStatus a rdf:Property ;
+ex:maritalStatus a rdfs:Property ;
     rdfs:label "marital status"@en, "burgerlijke staat"@nl ;
     rdfs:comment "Specifies the marital status of a person."@en ;
     rdfs:domain ex:Person ;
     rdfs:range ex:MaritalStatus .
 	
-ex:isListeningTo a rdf:Property ;
+ex:isListeningTo a rdfs:Property ;
     rdfs:label "is listening to"@en, "luistert naar"@nl ;
     rdfs:comment "Indicates a music artist currently being listened to by a person."@en ;
     rdfs:domain ex:Person ;
     rdfs:range ex:MusicArtist .
 	
-ex:knows a rdf:Property ;
+ex:knows a rdfs:Property ;
     rdfs:label "knows"@en, "kent"@nl ;
     rdfs:comment "Indicates a relationship of any nature between two persons." ;
     rdfs:domain ex:Person ;
     rdfs:range ex:Person .
 
 	
+
 
 
 
