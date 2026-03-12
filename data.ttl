@@ -16,8 +16,8 @@
 <http://www.wikidata.org/entity/Q28228836> a ex:MusicArtist ;
 	rdfs:label "Big Thief" . 
 	
-<https://www.tabulas.eu/ward/profile.ttl> a ex:Person ;
-	rdfs:label "Ward" .
+<https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> a ex:Person ;
+	rdfs:label "Daniel" .
 
 <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
 	rdfs:label "Thijs" .
@@ -34,8 +34,9 @@ ex:KnowledgeGraphs a ex:Course ;
 	ex:maritalStatus <https://www.wikidata.org/wiki/Q37713312> ;
 	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
 	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
-	ex:knows <https://www.tabulas.eu/ward/profile.ttl> ;
+	ex:knows <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> ;
 	ex:isFollowing ex:KnowledgeGraphs . 
+
 
 
 
