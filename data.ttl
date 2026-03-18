@@ -46,7 +46,7 @@ ex:KnowledgeGraphs a ex:Course ;
 	ex:name "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
 	ex:worksAt wiki:Q3359412 ;
-	ex:livesIn <http://vocab.getty.edu/tgn/1026794> ;
+	ex:livesIn tgn:1026794 ;
 	ex:maritalStatus wiki:Q37713312 ;
 	ex:isListeningTo wiki:Q28228836 ;
 	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
@@ -92,8 +92,9 @@ ex:Object3 a ex:Object ;
 
 ex:Object4 a ex:Object ;
 	ex:name "Chloë"@nl^^xsd:string ;
-	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe>
+	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:description "Tekening van Chloë door Chloë"@nl^^xsd:string ;
+	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:dateOfCreation "2002"^^etdf:ETDF .
 
 
