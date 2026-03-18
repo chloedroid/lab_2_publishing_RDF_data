@@ -77,7 +77,7 @@ ex:Object1 a ex:Object ;
 	ex:relatedTo wiki:Q1103761 ;
 	ex:relatedTo wiki:Q1417098 ; 
 	ex:isInCollection wiki:Q3359412 ;
-	foaf:depiction <https:\\iiif.amsab.be\iiif\3\image\43573\TE 005101-1.tif\full\max\0\default.jpg> . 
+	foaf:depiction <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> . 
 
 ex:Object2 a ex:Object ;
 	ex:name "Kindertekening Spaanse Burgeroorlog"@nl^^xsd:string ;
@@ -85,7 +85,8 @@ ex:Object2 a ex:Object ;
 	ex:dateOfCreation "1936/1939"^^etdf:ETDF ;
 	ex:description "Tekening in inkt en potlood gemaakt door een kind tijdens de Spaanse Burgeroorlog (1936-1939). Oorlogstafereel waarop grondtroepen elkaar bevechten, op de achtergrond een vliegtuig dat neergehaald wordt."@nl^^xsd:string ;
 	ex:depicts wiki:Q10859 ;
-	ex:isInCollection wiki:Q3359412 .
+	ex:isInCollection wiki:Q3359412 ;
+	foaf:depiction <https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> .
 	
 ex:Object3 a ex:Object ;
 	ex:name "Vissers van de Rode Vloot"@nl^^xsd:string ;
@@ -93,7 +94,8 @@ ex:Object3 a ex:Object ;
 	ex:description "Beschrijving: Zwart-witfoto van een groep vissers van de Rode Vloot, poserend op de kade in Oostende."^^xsd:string ;
 	ex:placeOfCreation tgn:7007967 ;
 	ex:depicts wiki:Q331432 ;
-	ex:isInCollection wiki:Q3359412 .
+	ex:isInCollection wiki:Q3359412 ;
+	foaf:depiction: <https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> .
 
 ex:Object4 a ex:Object ;
 	ex:name "Chloë"@nl^^xsd:string ;
