@@ -11,6 +11,24 @@
 
 # Data
 
+#   _____                                           .__   _____                     .___ .___ 
+#  /     \   ____         _____ ___.__. ______ ____ |  |_/ ____\ _____    ____    __| _/ |   |
+# /  \ /  \_/ __ \       /     <   |  |/  ___// __ \|  |\   __\  \__  \  /    \  / __ |  |   |
+#/    Y    \  ___/      |  Y Y  \___  |\___ \\  ___/|  |_|  |     / __ \|   |  \/ /_/ |  |   |
+#\____|__  /\___  > /\  |__|_|  / ____/____  >\___  >____/__|    (____  /___|  /\____ |  |___|
+#        \/     \/  )/        \/\/         \/     \/                  \/     \/      \/       
+
+<https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
+	ex:name "Chloë Van Gelder"^^xsd:string ;
+	ex:age 31 ;
+	ex:worksAt wiki:Q3359412 ;
+	ex:livesIn tgn:1026794 ;
+	ex:maritalStatus wiki:Q37713312 ;
+	ex:isListeningTo wiki:Q28228836 ;
+	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
+	ex:knows <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> ;
+	ex:isFollowing ex:KnowledgeGraphs . 
+
 wiki:Q3359412 a ex:Organisation ;
 	rdfs:label "Amsab-Institute of Social History"@en, "Amsab-Instituut voor Sociale Geschiedenis"@nl .
 
@@ -42,30 +60,12 @@ ex:KnowledgeGraphs a ex:Course ;
 	rdfs:label "Knowledge Graphs" ;
 	ex:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
 
-#   _____                                           .__   _____                     .___ .___ 
-#  /     \   ____         _____ ___.__. ______ ____ |  |_/ ____\ _____    ____    __| _/ |   |
-# /  \ /  \_/ __ \       /     <   |  |/  ___// __ \|  |\   __\  \__  \  /    \  / __ |  |   |
-#/    Y    \  ___/      |  Y Y  \___  |\___ \\  ___/|  |_|  |     / __ \|   |  \/ /_/ |  |   |
-#\____|__  /\___  > /\  |__|_|  / ____/____  >\___  >____/__|    (____  /___|  /\____ |  |___|
-#        \/     \/  )/        \/\/         \/     \/                  \/     \/      \/       
-
-<https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
-	ex:name "Chloë Van Gelder"^^xsd:string ;
-	ex:age 31 ;
-	ex:worksAt wiki:Q3359412 ;
-	ex:livesIn tgn:1026794 ;
-	ex:maritalStatus wiki:Q37713312 ;
-	ex:isListeningTo wiki:Q28228836 ;
-	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
-	ex:knows <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> ;
-	ex:isFollowing ex:KnowledgeGraphs . 
-
-#  _________                                      __                       .___ .__                 .__  __                          
-# /   _____/ ____   _____   ____   _____ ________/  |_  _____    ____    __| _/ |  |__   ___________|__|/  |______     ____   ____   
-# \_____  \ /  _ \ /     \_/ __ \  \__  \\_  __ \   __\ \__  \  /    \  / __ |  |  |  \_/ __ \_  __ \  \   __\__  \   / ___\_/ __ \  
-# /        (  <_> )  Y Y  \  ___/   / __ \|  | \/|  |    / __ \|   |  \/ /_/ |  |   Y  \  ___/|  | \/  ||  |  / __ \_/ /_/  >  ___/  
-#/_______  /\____/|__|_|  /\___  > (____  /__|   |__|   (____  /___|  /\____ |  |___|  /\___  >__|  |__||__| (____  /\___  / \___  > 
-#        \/             \/     \/       \/                   \/     \/      \/       \/     \/                    \//_____/      \/  
+#   _________                                      __                       .___ .__    .__          __                       
+# /   _____/ ____   _____   ____   _____ ________/  |_  _____    ____    __| _/ |  |__ |__| _______/  |_  ___________ ___.__.
+# \_____  \ /  _ \ /     \_/ __ \  \__  \\_  __ \   __\ \__  \  /    \  / __ |  |  |  \|  |/  ___/\   __\/  _ \_  __ <   |  |
+# /        (  <_> )  Y Y  \  ___/   / __ \|  | \/|  |    / __ \|   |  \/ /_/ |  |   Y  \  |\___ \  |  | (  <_> )  | \/\___  |
+#/_______  /\____/|__|_|  /\___  > (____  /__|   |__|   (____  /___|  /\____ |  |___|  /__/____  > |__|  \____/|__|   / ____|
+#        \/             \/     \/       \/                   \/     \/      \/       \/        \/                     \/     
 
 ex:Object1 a ex:Object ;
 	ex:name "Fêtes inaugurales nouvelle Maison du peuple de Bruxelles"@fr^^xsd:string ;
@@ -103,13 +103,6 @@ ex:Object4 a ex:Object ;
 	ex:description "Tekening van Chloë door Chloë"@nl^^xsd:string ;
 	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:dateOfCreation "2002"^^etdf:ETDF .
-
-#   _____              .___ .__  __           .__                                      
-#  /  _  \   ____    __| _/ |__|/  |_  ______ |__| _____ _____     ____   ____   ______
-# /  /_\  \ /    \  / __ |  |  \   __\/  ___/ |  |/     \\__  \   / ___\_/ __ \ /  ___/
-#/    |    \   |  \/ /_/ |  |  ||  |  \___ \  |  |  Y Y  \/ __ \_/ /_/  >  ___/ \___ \ 
-#\____|__  /___|  /\____ |  |__||__| /____  > |__|__|_|  (____  /\___  / \___  >____  >
-#        \/     \/      \/                \/           \/     \//_____/      \/     \/ 
 
 <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:image ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
