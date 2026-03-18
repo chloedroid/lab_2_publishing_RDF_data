@@ -176,7 +176,7 @@ ex:dateOfCreation a rdf:Property ;
 	
 ex:placeOfCreation a rdf:Property ;
 	rdfs:label "place of creation"@en, "plaats van creatie"@nl ;
-	rdfs:comment "Where the creation or production took place."@ en ;
+	rdfs:comment "Where the creation or production took place."@en ;
 	rdfs:domain ex:Object ;
 	rdfs:range ex:municipality .
 
