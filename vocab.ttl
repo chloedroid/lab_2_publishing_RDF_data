@@ -183,7 +183,7 @@ ex:placeOfCreation a rdf:Property ;
 ex:hasAsDigitalRepresentation a rdf:Property ;
 	rdfs:subPropertyOf foaf:depiction ;
 	rdfs:label "has as digital representation of"@en, "heeft als digitale representatie"@nl ;
-	rdfs:comment "A digital representation of an object captured using a scanner or a camera."@en .
+	rdfs:comment "A digital representation of an object captured using a scanner or a camera."@en ;
 	rdfs:domain ex:Object ;
 	rdfs:range ex:DigitalRepresentation .
 	
