@@ -2,6 +2,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/>
+@prefix etdf: <http://id.loc.gov>
 
 # Classes
 
@@ -28,6 +32,28 @@ ex:MusicArtist a rdfs:Class ;
 ex:Course a rdfs:Class ;
 	rdfs:label "Course"@en, "Vak"@nl ;
 	rdfs:comment "A course in school is a structured, distinct unit of study focused on a specific subject."@en .
+	
+ex:DigitalRepresentation a rdf:Class ;
+	rdfs:subClassof foaf:Image ;
+	rdfs:label "Digital representation"@en, "Digitale representatie"@nl ;
+	rdfs:comment "A digital representation of a heritage object captured using a scanner or a camera.@en .
+
+ex:Object a rdf:Class ;
+	rdfs:subClassof crm:E22_Man-Made_Object ;
+	rdfs:label "object"@en ;
+	rdfs:comment "It comprises all persistent physical objects that are purposely created by human activity."@en .
+
+ex:Thing a rdf:Class ;
+	rdfs:label "Thing"@en, "Ding"@nl ;
+	rdfs:comment "An object or entity not precisely designated or capable of being designated."@en .
+	
+ex:RightsStatus a rdf:Class ;
+	rdfs:label "Rights status"@en, "Rechtenstatus"@nl;
+	rdfs:comment "The status of a digital representation of an object that states if the representation is a copyrighted work or not."@en .
+	
+ex:Date a rdf:Class ;
+	rdfs:label "Date"@en, "Datum"@nl ;
+	rdfs:comment "A particular day, month, or year."@en .
 	
 # Properties
 	
@@ -84,5 +110,53 @@ ex:seeAlso a rdf:Property ;
 	rdfs:comment "Relates a entity to another entity."@en ;
 	rdfs:domain rdfs:Resource ;
 	rdfs:range rdfs:Resoure . 
+	
+ex:creator a rdf:Property ;
+	rdfs:label "creator"@en, "vervaardiger"@nl ;
+	rdfs:comment "A person or thing that brings something into existence."@en ;
+	rdfs:domain ex:Object ;
+	rdfs:range ex:Person . 
+
+ex:description a rdf:Property ;
+	rdfs:label "description"@en, "beschrijving"@nl ;
+	rdfs:comment "A written account of a person, object, or event." ;
+	rdfs:domain ex:Object ;
+	rdfs:range xsd:string . 
+	
+ex:depicts a rdf:Property ;
+	rdfs:label "depicts"@en, "beeldt af"@nl ;
+	rdfs:comment "A thing depicted in this representation."@en ;
+	rdfs:domain ex:Object ;
+	rdfs:range ex:Thing .
+	
+ex:relatedTo a rdf:Property ;
+	rdfs:label "related to"@en, "gerelateerd tot"@nl ;
+	rdfs:comment "A object or entity that is connected with something."@en ;
+	rdfs:domain ex:Object ;
+	rdfs:range ex: Thing . 
+	
+ex:isInCollectionOf a rdf:Property ;
+	rdfs:label "is in collection of"@en, "is in de collectie van"@nl ;
+	rdfs:comment "Is managed in the following heritage collection."@en ;
+	rdfs:domain ex:Object ;
+	rdfs:range ex:Organisation . 
+	
+ex:hasAsRightsStatus a rdf:Property ;
+	rdfs:label "has rights status"@en, "heeft rechtenstatus"@nl ;
+	rdfs:comment "Has the following status concerning copyright."@en ;
+	rdfs:domain ex:DigitalRepresentation ;
+	rdfs:range ex:RightsStatus .
+	
+ex:dateOfCreation a rdf:Property ;
+	rdfs:label "date of creation"@en, "datum van creatie"@nl ;
+	rdfs:comment "The date, year and/or month the object was created or produced."@en ;
+	rdfs:domain ex:Object ;
+	rdfs:range ex:Date .
+	
+ex:placeOfCreation a rdf:Property ;
+	rdfs:label "place of creation"@en; "plaats van creatie"@nl ;
+	rdfs:comment "Where the creation or production took place."@ en ;
+	rdfs:domain ex:Object ;
+	rdfs:range ex:municipality .
 	
 
