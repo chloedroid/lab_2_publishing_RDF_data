@@ -3,7 +3,6 @@
 @prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
-@prefix schema: <https://schema.org/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix etdf: <http://id.loc.gov> .
 
@@ -36,7 +35,7 @@ ex:Course a rdfs:Class ;
 ex:DigitalRepresentation a rdf:Class ;
 	rdfs:subClassof foaf:Image ;
 	rdfs:label "Digital representation"@en, "Digitale representatie"@nl ;
-	rdfs:comment "A digital representation of a heritage object captured using a scanner or a camera."@en .
+	rdfs:comment "A digital representation of an heritage object captured using a scanner or a camera."@en .
 
 ex:Object a rdf:Class ;
 	rdfs:subClassof crm:E22_Man-Made_Object ;
@@ -122,7 +121,7 @@ ex:description a rdf:Property ;
 	rdfs:comment "A written account of a person, object, or event." ;
 	rdfs:domain ex:Object ;
 	rdfs:range xsd:string . 
-	
+
 ex:depicts a rdf:Property ;
 	rdfs:label "depicts"@en, "beeldt af"@nl ;
 	rdfs:comment "A thing depicted in this representation."@en ;
@@ -158,5 +157,12 @@ ex:placeOfCreation a rdf:Property ;
 	rdfs:comment "Where the creation or production took place."@ en ;
 	rdfs:domain ex:Object ;
 	rdfs:range ex:municipality .
+
+ex:hasAsDigitalRepresentation a rdf:Property ;
+	rdfs:subPropertyOf foaf:depiction ;
+	rdfs:label "has as digital representation of"@en, "heeft als digitale representatie"@nl ;
+	rdfs:comment "A digital representation of an object captured using a scanner or a camera."@en .
+	rdfs:domain ex:Object ;
+	rdfs:range ex:DigitalRepresentation .
 	
 
