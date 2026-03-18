@@ -1,20 +1,36 @@
 @prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <https://schema.org/> .
+@prefix wiki: <http://www.wikidata.org/entity/>
+@prefix rkd: <https://rkd.nl/artists/>
+@prefix etdf: <https://id.loc.gov/>
+@prefix tgn: <http://vocab.getty.edu/tgn/>
 
 # Data
 
-<http://www.wikidata.org/entity/Q3359412> a ex:Organisation ;
+wiki:Q3359412 a ex:Organisation ;
 	rdfs:label "Amsab-Institute of Social History"@en, "Amsab-Instituut voor Sociale Geschiedenis"@nl .
 
-<http://vocab.getty.edu/tgn/1026794> a ex:Municipality ;
+tgn:1026794 a ex:Municipality ;
 	rdfs:label "Waregem" .
 	
- <http://www.wikidata.org/wiki/Q37713312> a ex:MaritalStatus ;
+tgn:7007967 a ex:Municipality ;
+	rdfs:label "Oostende" . 
+	
+ wiki:Q37713312 a ex:MaritalStatus ;
 	rdfs:label "Married"@en, "Getrouwd"@nl . 
 	
-<http://www.wikidata.org/entity/Q28228836> a ex:MusicArtist ;
+wiki:Q28228836 a ex:MusicArtist ;
 	rdfs:label "Big Thief" . 
+	
+rkd:100462 a ex:Creator ;
+	rdfs:label "Julies Pierre Van Biesbroeck" . 
+
+wiki:Q21645510 a ex:Creator ;
+	rdfs:label "J.E. Goossens" .
 	
 <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> a ex:Person ;
 	rdfs:label "Daniel" .
@@ -29,14 +45,56 @@ ex:KnowledgeGraphs a ex:Course ;
 <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
 	ex:name "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
-	ex:worksAt <https://www.wikidata.org/entity/Q3359412> ;
+	ex:worksAt wiki:Q3359412 ;
 	ex:livesIn <http://vocab.getty.edu/tgn/1026794> ;
-	ex:maritalStatus <https://www.wikidata.org/wiki/Q37713312> ;
-	ex:isListeningTo <https://www.wikidata.org/entity/Q28228836> ;
+	ex:maritalStatus wiki:Q37713312 ;
+	ex:isListeningTo wiki:Q28228836 ;
 	ex:knows <https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> ;
 	ex:knows <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> ;
 	ex:isFollowing ex:KnowledgeGraphs . 
 
+<https://iiif.amsab.be/iiif/3/image/23969/af000902.jpg/full/max/0/default.jpg> a ex:image ;
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
+
+<https:\\iiif.amsab.be\iiif\3\image\43573\TE 005101-1.tif\full\max\0\default.jpg> a ex:image ;
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
+	
+<https:\\iiif.amsab.be\iiif\3\image\8700\fo003806.jpg\full\max\0\default.jpg> a ex:image ;
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
+	
+ex:Object1 a ex:Object ;
+	ex:name "Fêtes inaugurales nouvelle Maison du peuple de Bruxelles"@fr^^xsd:string ;
+	ex:creator rkd:100462 ;
+	ex:creator wiki:Q21645510 ;
+	ex:creator wiki:Q1811565 ;
+	ex:dateOfCreation "1899"^^etdf:ETDF ;
+	ex:description "Affiche van Jules Van Biesbroeck jr. uitgegeven in 1899 door de Parti Ouvrier Belge (POB) voor de inhuldiging van het volkshuis in Brussel."@nl^^xsd:string ;
+	ex:relatedTo wiki:Q1103761 ;
+	ex:relatedTo wiki:Q1417098 ; 
+	ex:isInCollection wiki:Q3359412 ;
+	foaf:depiction <https:\\iiif.amsab.be\iiif\3\image\43573\TE 005101-1.tif\full\max\0\default.jpg> . 
+
+ex:Object2 a ex:Object ;
+	ex:name "Kindertekening Spaanse Burgeroorlog"@nl^^xsd:string ;
+	ex:creator "A. Martinez"^^xsd:string ;
+	ex:dateOfCreation "1936/1939"^^edtf:ETDF ;
+	ex:description "Tekening in inkt en potlood gemaakt door een kind tijdens de Spaanse Burgeroorlog (1936-1939). Oorlogstafereel waarop grondtroepen elkaar bevechten, op de achtergrond een vliegtuig dat neergehaald wordt."@nl^^xsd:string ;
+	ex:depicts wiki:Q10859 ;
+	ex:isInCollection wiki:Q3359412 .
+	
+ex:Object3 a ex:Object ;
+	ex:name "Vissers van de Rode Vloot"@nl^^xsd:string ;
+	ex:creator wiki:Q131286557
+	ex:description "Beschrijving: Zwart-witfoto van een groep vissers van de Rode Vloot, poserend op de kade in Oostende."^^xsd:string ;
+	ex:placeOfCreation tgn:7007967 ;
+	ex:depicts wiki:Q331432 ;
+	ex:isInCollection wiki:Q3359412 .
+
+ex:Object4 a ex:Object ;
+	ex:name "Chloë"@nl^^xsd:string ;
+	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe>
+	ex:description "Tekening van Chloë door Chloë"@nl^^xsd:string ;
+	ex:dateOfCreation "2002"^^etdf:ETDF .
 
 
 
