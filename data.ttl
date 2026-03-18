@@ -19,7 +19,7 @@
 #        \/     \/  )/        \/\/         \/     \/                  \/     \/      \/       
 
 <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
-	ex:name "Chloë Van Gelder"^^xsd:string ;
+	ex:personalName "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
 	ex:worksAt wiki:Q3359412 ;
 	ex:livesIn tgn:1026794 ;
@@ -68,7 +68,7 @@ ex:KnowledgeGraphs a ex:Course ;
 #        \/             \/     \/       \/                   \/     \/      \/       \/        \/                     \/     
 
 ex:Object1 a ex:Object ;
-	ex:name "Fêtes inaugurales nouvelle Maison du peuple de Bruxelles"@fr^^xsd:string ;
+	ex:title "Fêtes inaugurales nouvelle Maison du peuple de Bruxelles"@fr^^xsd:string ;
 	ex:creator rkd:100462 ;
 	ex:creator wiki:Q21645510 ;
 	ex:creator wiki:Q1811565 ;
@@ -80,7 +80,7 @@ ex:Object1 a ex:Object ;
 	ex:hasAsDigitalRepresentation <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> . 
 
 ex:Object2 a ex:Object ;
-	ex:name "Kindertekening Spaanse Burgeroorlog"@nl^^xsd:string ;
+	ex:title "Kindertekening Spaanse Burgeroorlog"@nl^^xsd:string ;
 	ex:creator "A. Martinez"^^xsd:string ;
 	ex:dateOfCreation "1936/1939"^^etdf:ETDF ;
 	ex:description "Tekening in inkt en potlood gemaakt door een kind tijdens de Spaanse Burgeroorlog (1936-1939). Oorlogstafereel waarop grondtroepen elkaar bevechten, op de achtergrond een vliegtuig dat neergehaald wordt."@nl^^xsd:string ;
@@ -89,7 +89,7 @@ ex:Object2 a ex:Object ;
 	ex:hasAsDigitalRepresentation  <https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> .
 	
 ex:Object3 a ex:Object ;
-	ex:name "Vissers van de Rode Vloot"@nl^^xsd:string ;
+	ex:title "Vissers van de Rode Vloot"@nl^^xsd:string ;
 	ex:creator wiki:Q131286557 ;
 	ex:description "Beschrijving: Zwart-witfoto van een groep vissers van de Rode Vloot, poserend op de kade in Oostende."^^xsd:string ;
 	ex:placeOfCreation tgn:7007967 ;
@@ -98,7 +98,7 @@ ex:Object3 a ex:Object ;
 	ex:hasAsDigitalRepresentation <https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> .
 
 ex:Object4 a ex:Object ;
-	ex:name "Chloë"@nl^^xsd:string ;
+	ex:title "Chloë"@nl^^xsd:string ;
 	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:description "Tekening van Chloë door Chloë"@nl^^xsd:string ;
 	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
