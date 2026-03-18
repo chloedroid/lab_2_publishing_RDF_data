@@ -36,7 +36,7 @@ ex:Course a rdfs:Class ;
 ex:DigitalRepresentation a rdf:Class ;
 	rdfs:subClassof foaf:Image ;
 	rdfs:label "Digital representation"@en, "Digitale representatie"@nl ;
-	rdfs:comment "A digital representation of a heritage object captured using a scanner or a camera.@en .
+	rdfs:comment "A digital representation of a heritage object captured using a scanner or a camera."@en .
 
 ex:Object a rdf:Class ;
 	rdfs:subClassof crm:E22_Man-Made_Object ;
