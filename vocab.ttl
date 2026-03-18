@@ -15,6 +15,7 @@
 
 ex:Person a rdfs:Class ;
 	rdfs:label "Person"@en, "Persoon"@nl ;
+	rdfs:subClassOf foaf:Person ;
 	rdfs:comment "An individual human being; a man, woman, or child."@en .
 
 ex:Municipality a rdfs:Class ;
@@ -38,7 +39,7 @@ ex:Course a rdfs:Class ;
 	rdfs:comment "A course in school is a structured, distinct unit of study focused on a specific subject."@en .
 	
 ex:DigitalRepresentation a rdf:Class ;
-	rdfs:subClassof foaf:Image ;
+	rdfs:subClassOf foaf:Image ;
 	rdfs:label "Digital representation"@en, "Digitale representatie"@nl ;
 	rdfs:comment "A digital representation of an heritage object captured using a scanner or a camera."@en .
 
