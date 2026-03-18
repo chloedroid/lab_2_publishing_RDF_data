@@ -133,7 +133,7 @@ ex:relatedTo a rdf:Property ;
 	rdfs:label "related to"@en, "gerelateerd tot"@nl ;
 	rdfs:comment "A object or entity that is connected with something."@en ;
 	rdfs:domain ex:Object ;
-	rdfs:range ex: Thing . 
+	rdfs:range ex:Thing . 
 	
 ex:isInCollectionOf a rdf:Property ;
 	rdfs:label "is in collection of"@en, "is in de collectie van"@nl ;
