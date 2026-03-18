@@ -53,13 +53,13 @@ ex:KnowledgeGraphs a ex:Course ;
 	ex:knows <https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> ;
 	ex:isFollowing ex:KnowledgeGraphs . 
 
-<https://iiif.amsab.be/iiif/3/image/23969/af000902.jpg/full/max/0/default.jpg> a ex:image ;
+<https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:image ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 
-<https:\\iiif.amsab.be\iiif\3\image\43573\TE 005101-1.tif\full\max\0\default.jpg> a ex:image ;
+<https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> a ex:image ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 	
-<https:\\iiif.amsab.be\iiif\3\image\8700\fo003806.jpg\full\max\0\default.jpg> a ex:image ;
+<https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:image ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
 	
 ex:Object1 a ex:Object ;
@@ -77,14 +77,14 @@ ex:Object1 a ex:Object ;
 ex:Object2 a ex:Object ;
 	ex:name "Kindertekening Spaanse Burgeroorlog"@nl^^xsd:string ;
 	ex:creator "A. Martinez"^^xsd:string ;
-	ex:dateOfCreation "1936/1939"^^edtf:ETDF ;
+	ex:dateOfCreation "1936/1939"^^etdf:ETDF ;
 	ex:description "Tekening in inkt en potlood gemaakt door een kind tijdens de Spaanse Burgeroorlog (1936-1939). Oorlogstafereel waarop grondtroepen elkaar bevechten, op de achtergrond een vliegtuig dat neergehaald wordt."@nl^^xsd:string ;
 	ex:depicts wiki:Q10859 ;
 	ex:isInCollection wiki:Q3359412 .
 	
 ex:Object3 a ex:Object ;
 	ex:name "Vissers van de Rode Vloot"@nl^^xsd:string ;
-	ex:creator wiki:Q131286557
+	ex:creator wiki:Q131286557 ;
 	ex:description "Beschrijving: Zwart-witfoto van een groep vissers van de Rode Vloot, poserend op de kade in Oostende."^^xsd:string ;
 	ex:placeOfCreation tgn:7007967 ;
 	ex:depicts wiki:Q331432 ;
