@@ -83,7 +83,7 @@ ex:Object2 a ex:Object ;
 	ex:title "Kindertekening Spaanse Burgeroorlog"@nl ;
 	ex:creator "A. Martinez"^^xsd:string ;
 	ex:dateOfCreation "1936/1939"^^etdf:ETDF ;
-	ex:description "Tekening in inkt en potlood gemaakt door een kind tijdens de Spaanse Burgeroorlog (1936-1939). Oorlogstafereel waarop grondtroepen elkaar bevechten, op de achtergrond een vliegtuig dat neergehaald wordt."@nl^^xsd:string ;
+	ex:description "Tekening in inkt en potlood gemaakt door een kind tijdens de Spaanse Burgeroorlog (1936-1939). Oorlogstafereel waarop grondtroepen elkaar bevechten, op de achtergrond een vliegtuig dat neergehaald wordt."@nl ;
 	ex:depicts wiki:Q10859 ;
 	ex:isInCollection wiki:Q3359412 ;
 	ex:hasAsDigitalRepresentation  <https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> .
