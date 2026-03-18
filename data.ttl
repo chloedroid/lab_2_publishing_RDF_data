@@ -1,4 +1,4 @@
-@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl> .
+@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
