@@ -103,18 +103,18 @@ ex:Object4 a ex:Object ;
 	ex:description "Tekening van Chloë door Chloë"@nl ;
 	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:dateOfCreation "2002~"^^etdf:ETDF ;
-	ex:hasAsDigitalRepresentation <https://chloedroid.github.io/lab_2_publishing_RDF_data/Chloë.jpg> .
+	ex:hasAsDigitalRepresentation <https://chloedroid.github.io/lab_2_publishing_RDF_data/chloe.jpg> .
 
-<https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:image ;
+<https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 
-<https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> a ex:image ;
+<https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 	
-<https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:image ;
+<https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
 
-<https://chloedroid.github.io/lab_2_publishing_RDF_data/Chloë.jpg> a ex:image ;
+<https://chloedroid.github.io/lab_2_publishing_RDF_data/chloe.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
 
 
