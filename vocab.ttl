@@ -37,25 +37,25 @@ ex:Course a rdfs:Class ;
 	rdfs:label "Course"@en, "Vak"@nl ;
 	rdfs:comment "A course in school is a structured, distinct unit of study focused on a specific subject."@en .
 	
-ex:DigitalRepresentation a rdf:Class ;
+ex:DigitalRepresentation a rdfs:Class ;
 	rdfs:subClassOf foaf:Image ;
 	rdfs:label "Digital representation"@en, "Digitale representatie"@nl ;
 	rdfs:comment "A digital representation of an heritage object captured using a scanner or a camera."@en .
 
-ex:Object a rdf:Class ;
+ex:Object a rdfs:Class ;
 	rdfs:label "object"@en ;
 	rdfs:subClassOf crm:E22_Man-Made_Object ;
 	rdfs:comment "It comprises all persistent physical objects that are purposely created by human activity."@en .
 
-ex:Thing a rdf:Class ;
+ex:Thing a rdfs:Class ;
 	rdfs:label "Thing"@en, "Ding"@nl ;
 	rdfs:comment "An object or entity not precisely designated or capable of being designated."@en .
 	
-ex:RightsStatus a rdf:Class ;
+ex:RightsStatus a rdfs:Class ;
 	rdfs:label "Rights status"@en, "Rechtenstatus"@nl;
 	rdfs:comment "The status of a digital representation of an object that states if the representation is a copyrighted work or not."@en .
 	
-ex:Date a rdf:Class ;
+ex:Date a rdfs:Class ;
 	rdfs:label "Date"@en, "Datum"@nl ;
 	rdfs:comment "A particular day, month, or year."@en .
 	
