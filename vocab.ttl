@@ -44,7 +44,7 @@ ex:DigitalRepresentation a rdf:Class ;
 
 ex:Object a rdf:Class ;
 	rdfs:label "object"@en ;
-	rdfs:subClassof crm:E22_Man-Made_Object ;
+	rdfs:subClassOf crm:E22_Man-Made_Object ;
 	rdfs:comment "It comprises all persistent physical objects that are purposely created by human activity."@en .
 
 ex:Thing a rdf:Class ;
@@ -58,10 +58,6 @@ ex:RightsStatus a rdf:Class ;
 ex:Date a rdf:Class ;
 	rdfs:label "Date"@en, "Datum"@nl ;
 	rdfs:comment "A particular day, month, or year."@en .
-
-ex:Title a rdf:Class ;
-	rdfs:label "Title"@en, "Titel"@nl ;
-	rdfs:comment "The (given) name of a work."@en .
 	
 #                                          __  .__               
 #_____________  ____ ______   ____________/  |_|__| ____   ______
@@ -123,14 +119,14 @@ ex:seeAlso a rdf:Property ;
 	rdfs:label "see also"@en, "zie ook"@nl ;
 	rdfs:comment "Relates a entity to another entity."@en ;
 	rdfs:domain rdfs:Resource ;
-	rdfs:range rdfs:Resoure . 
+	rdfs:range rdfs:Resource . 
 
 ex:title a rdf:Property ;
 	rdfs:label "title"@en, "titel"@nl ;
 	rdfs:subPropertyOf foaf:name ;
 	rdfs:comment "The title of an object"@en ;
 	rdfs:domain ex:Object ;
-	rdfs:range ex:Title . 
+	rdfs:range rdfs:Literal . 
 
 ex:creator a rdf:Property ;
 	rdfs:label "creator"@en, "vervaardiger"@nl ;
@@ -147,7 +143,7 @@ ex:description a rdf:Property ;
 
 ex:depicts a rdf:Property ;
 	rdfs:label "depicts"@en, "beeldt af"@nl ;
-	rdfs:subPropretyOf foaf:depicts ;
+	rdfs:subPropertyOf foaf:depicts ;
 	rdfs:comment "A thing depicted in this representation."@en ;
 	rdfs:domain ex:Object ;
 	rdfs:range ex:Thing .
@@ -180,7 +176,7 @@ ex:placeOfCreation a rdf:Property ;
 	rdfs:label "place of creation"@en, "plaats van creatie"@nl ;
 	rdfs:comment "Where the creation or production took place."@en ;
 	rdfs:domain ex:Object ;
-	rdfs:range ex:municipality .
+	rdfs:range ex:Municipality .
 
 ex:hasAsDigitalRepresentation a rdf:Property ;
 	rdfs:subPropertyOf foaf:depiction ;
