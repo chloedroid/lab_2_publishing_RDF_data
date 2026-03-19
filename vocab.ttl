@@ -146,7 +146,7 @@ ex:depicts a rdf:Property ;
 	rdfs:label "depicts"@en, "beeldt af"@nl ;
 	rdfs:subPropertyOf foaf:depicts ;
 	rdfs:comment "A thing depicted in this representation."@en ;
-	rdfs:domain ex:Object ;
+	rdfs:domain ex:DigitalRepresentation ;
 	rdfs:range ex:Thing .
 	
 ex:relatedTo a rdf:Property ;
