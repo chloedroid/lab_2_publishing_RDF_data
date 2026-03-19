@@ -108,7 +108,7 @@ ex:Object4 a ex:Object ;
 <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 
-<https://iiif.amsab.be/iiif/3/image/43573/TE 005101-1.tif/full/max/0/default.jpg> a ex:DigitalRepresentation ;
+<https://iiif.amsab.be/iiif/3/image/43573/TE%20005101-1.tif/full/max/0/default.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 	
 <https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:DigitalRepresentation ;
