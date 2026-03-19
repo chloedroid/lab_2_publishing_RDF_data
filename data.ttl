@@ -89,7 +89,7 @@ ex:Object2 a ex:Object ;
 	ex:hasAsDigitalRepresentation  <https://iiif.amsab.be/iiif/3/image/43573/TE%20005101-1.tif/full/max/0/default.jpg> .
 	
 ex:Object3 a ex:Object ;
-	ex:title "Vissers van de Rode Vloot"@nl^^xsd:string ;
+	ex:title "Vissers van de Rode Vloot"@nl ;
 	ex:creator wiki:Q131286557 ;
 	ex:description "Beschrijving: Zwart-witfoto van een groep vissers van de Rode Vloot, poserend op de kade in Oostende."@nl ;
 	ex:placeOfCreation tgn:7007967 ;
