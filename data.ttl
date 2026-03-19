@@ -100,9 +100,10 @@ ex:Object3 a ex:Object ;
 ex:Object4 a ex:Object ;
 	ex:title "Chloë" ;
 	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
-	ex:description "Tekening van Chloë door Chloë"@nl^^xsd:string ;
+	ex:description "Tekening van Chloë door Chloë"@nl ;
 	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
-	ex:dateOfCreation "2002"^^etdf:ETDF .
+	ex:dateOfCreation "2002"^^etdf:ETDF ;
+	ex:hasAsDigitalRepresentation <https://chloedroid.github.io/lab_2_publishing_RDF_data/Chloë.jpg> .
 
 <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:image ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
@@ -111,6 +112,9 @@ ex:Object4 a ex:Object ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 	
 <https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:image ;
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
+
+<https://chloedroid.github.io/lab_2_publishing_RDF_data/Chloë.jpg> a ex:image ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
 
 
