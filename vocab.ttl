@@ -108,6 +108,7 @@ ex:isListeningTo a rdf:Property ;
 	
 ex:knows a rdf:Property ;
     rdfs:label "knows"@en, "kent"@nl ;
+	rdfs:subPropertyOf foaf:knows ;
     rdfs:comment "Indicates a relationship of any nature between two persons." ;
     rdfs:domain ex:Person ;
     rdfs:range ex:Person .
