@@ -102,7 +102,7 @@ ex:Object4 a ex:Object ;
 	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:description "Tekening van Chloë door Chloë"@nl ;
 	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
-	ex:dateOfCreation "2002"^^etdf:ETDF ;
+	ex:dateOfCreation "2002~"^^etdf:ETDF ;
 	ex:hasAsDigitalRepresentation <https://chloedroid.github.io/lab_2_publishing_RDF_data/Chloë.jpg> .
 
 <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:image ;
