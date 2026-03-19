@@ -1,12 +1,12 @@
-@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
+@prefix ex: <http://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
-@prefix schema: <https://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix wiki: <http://www.wikidata.org/entity/> .
-@prefix rkd: <https://rkd.nl/artists/> .
-@prefix etdf: <https://id.loc.gov/> .
+@prefix rkd: <http://rkd.nl/artists/> .
+@prefix etdf: <http://id.loc.gov/> .
 @prefix tgn: <http://vocab.getty.edu/tgn/> .
 
 # Data
