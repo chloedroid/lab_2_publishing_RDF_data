@@ -68,6 +68,7 @@ ex:Date a rdfs:Class ;
 	
 ex:personalName a rdf:Property ;
 	rdfs:label "personal name"@en, "persoonsnaam"@nl ;
+	rdfs:subClassOf foaf:name ;
 	rdfs:comment "A personal name is the set of names by which an individual person is known."@en ;
 	rdfs:domain ex:Person ;
 	rdfs:range xsd:string .
