@@ -1,4 +1,4 @@
-@prefix ex: <http://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
+@prefix ex: <https://chloedroid.github.io/lab_2_publishing_RDF_data/vocab.ttl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -18,7 +18,7 @@
 #\____|__  /\___  > /\  |__|_|  / ____/____  >\___  >____/__|    (____  /___|  /\____ |  |___|
 #        \/     \/  )/        \/\/         \/     \/                  \/     \/      \/       
 
-<http://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
+<https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
 	ex:personalName "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
 	ex:worksAt wiki:Q3359412 ;
@@ -48,9 +48,9 @@ rkd:100462 a ex:Creator ;
 wiki:Q21645510 a ex:Creator ;
 	rdfs:label "J.E. Goossens" .
 	
-<http://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> a ex:Person ;
+<https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> a ex:Person ;
 	rdfs:label "Daniel" .
-<http://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
+<https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
 	rdfs:label "Thijs" .
 
 ex:KnowledgeGraphs a ex:Course ;
