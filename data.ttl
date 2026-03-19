@@ -112,10 +112,14 @@ ex:Object4 a ex:Object ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 	
 <https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:DigitalRepresentation ;
-	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;
+	ex:depicts wiki:Q331432 .
 
 <https://chloedroid.github.io/lab_2_publishing_RDF_data/chloe.jpg> a ex:DigitalRepresentation ;
-	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;
+	ex:depicts <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
+	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> .
+	
 
 
 
