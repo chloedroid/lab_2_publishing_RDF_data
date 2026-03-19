@@ -18,7 +18,7 @@
 #\____|__  /\___  > /\  |__|_|  / ____/____  >\___  >____/__|    (____  /___|  /\____ |  |___|
 #        \/     \/  )/        \/\/         \/     \/                  \/     \/      \/       
 
-<https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
+<http://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> a ex:Person ;
 	ex:personalName "Chloë Van Gelder"^^xsd:string ;
 	ex:age 31 ;
 	ex:worksAt wiki:Q3359412 ;
@@ -34,7 +34,6 @@ wiki:Q3359412 a ex:Organisation ;
 
 tgn:1026794 a ex:Municipality ;
 	rdfs:label "Waregem" .
-	
 tgn:7007967 a ex:Municipality ;
 	rdfs:label "Oostende" . 
 	
@@ -46,14 +45,12 @@ wiki:Q28228836 a ex:MusicArtist ;
 	
 rkd:100462 a ex:Creator ;
 	rdfs:label "Julies Pierre Van Biesbroeck" . 
-
 wiki:Q21645510 a ex:Creator ;
 	rdfs:label "J.E. Goossens" .
 	
-<https://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> a ex:Person ;
+<http://daniel1402.github.io/knowledge-graphs-labs/data.ttl#> a ex:Person ;
 	rdfs:label "Daniel" .
-
-<https://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
+<http://tdhulster.github.io/knowledge-graphs-ugent-2026/profile.ttl#me> a ex:Person ;
 	rdfs:label "Thijs" .
 
 ex:KnowledgeGraphs a ex:Course ;
@@ -101,7 +98,7 @@ ex:Object4 a ex:Object ;
 	ex:creator <https://chloedroid.github.io/lab_2_publishing_RDF_data/data.ttl#chloe> ;
 	ex:description "Tekening van Chloë door Chloë"@nl ;
 	ex:dateOfCreation "2002~"^^etdf:ETDF ;
-	ex:hasAsDigitalRepresentation <https://chloedroid.github.io/lab_2_publishing_RDF_data/chloe.jpg> .
+	ex:hasAsDigitalRepresentation <http://chloedroid.github.io/lab_2_publishing_RDF_data/chloe.jpg> .
 
 <https://iiif.amsab.be/iiif/3/image/23969/af000902-1.tif/full/max/0/default.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
@@ -110,8 +107,8 @@ ex:Object4 a ex:Object ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/mark/1.0/> . 
 	
 <https://iiif.amsab.be/iiif/3/image/8700/fo003806.jpg/full/max/0/default.jpg> a ex:DigitalRepresentation ;
-	ex:depicts wiki:Q331432 ;
-	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> .
+	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;
+	ex:depicts wiki:Q331432 .
 
 <https://chloedroid.github.io/lab_2_publishing_RDF_data/chloe.jpg> a ex:DigitalRepresentation ;
 	ex:hasAsRightsStatus <https://creativecommons.org/publicdomain/zero/1.0/deed.nl> ;
